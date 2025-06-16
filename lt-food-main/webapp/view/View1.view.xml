@@ -1,0 +1,63 @@
+<mvc:View
+  controllerName="ltfoodprotal.controller.View1"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:f="sap.f"
+  xmlns:core="sap.ui.core"
+  xmlns:layout="sap.ui.layout"
+  displayBlock="true">
+
+  <SplitApp id="splitApp">
+    <!-- Master Page -->
+   <masterPages>
+  <Page id="_IDGenPage1" showHeader="false" class="sapUiResponsiveContentPadding">
+    <VBox id="_IDGenVBox" class="weatherBackground">
+      <IconTabBar id="tabBar" class="sapUiSmallMarginBottom">
+        <items>
+          <IconTabFilter id="_IDGenIconTabFilter" icon="sap-icon://building" text="Mandi" key="mandi"/>
+          <IconTabFilter id="_IDGenIconTabFilter1" icon="sap-icon://home" text="Plant" key="plant"/>
+        </items>
+      </IconTabBar>
+
+      <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+        <Text id="_IDGenText" text="📍 Mandi location data loading..." class="sapUiSmallMarginBottom"/>
+        <Text id="_IDGenText1" text="°C" class="sapUiSmallMarginTop sapUiTinyMarginBottom"/>
+        <Text id="_IDGenText2" text="#" />
+        <Text id="_IDGenText4" text="#" />
+        <Text id="_IDGenText5" text="Hourly Forecast" class="sapUiSmallMarginTop sapMTitle"/>
+      </VBox>
+    </VBox>
+  </Page>
+</masterPages>
+
+
+    <!-- Detail Page -->
+    <detailPages>
+      <Page id="detailPage" title="Dashboard" showHeader="false">
+       <f:GridList
+  id="dashboardGrid"
+  
+  growing="false"
+  growingScrollToLoad="true"
+  items="{path: 'viewModel>/tiles'}"
+  class="sapUiSmallMargin sapUiResponsiveMargin"
+  width="100%"
+  inset="false"
+  gridLayout="true"
+  noDataText="No Tiles Available"
+  minItems="1"
+  columns="4">
+
+  <CustomListItem id="_IDGenCustomListItem1" press=".onTilePress" class="tileYellow">
+  <VBox id="_IDGenVBox3" justifyContent="Center" alignItems="Center" width="100%">
+    <core:Icon id="_IDGenIcon" src="{viewModel>icon}" size="2.5rem" />
+    <Text id="_IDGenText6" text="{viewModel>title}" textAlign="Center" wrapping="true"/>
+  </VBox>
+  </CustomListItem>
+
+</f:GridList>
+
+      </Page>
+    </detailPages>
+  </SplitApp>
+</mvc:View>

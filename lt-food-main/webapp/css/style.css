@@ -1,0 +1,38 @@
+.tileYellow {
+  background-color: #d4a418; /* matching your uploaded design */
+  color: white !important;
+  border-radius: 0.75rem;
+  padding: 2rem 1rem;
+  min-height: 10rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tileYellow:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+
+.weatherBackground {
+  background-color: #54C3EF !important;  /* Sky blue */
+  height: 100%;
+  padding: 1rem;
+  color: white;
+}
+
+.weatherBackground .sapMText {
+  color: white !important;
+  font-weight: bold;
+}
+
+#tabBar {
+  background-color: #54C3EF !important; /* Apply to the IconTabBar */
+  border-radius: 0.5rem;
+}
