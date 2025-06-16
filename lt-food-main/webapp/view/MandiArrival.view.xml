@@ -1,7 +1,7 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ltfoodprotal.controller.MandiArrival">
     <Page id="_IDGenPage2" title="Mandi Arrival">
         <content>
-            <Text id="_IDGenText3" text="Mandi Arrival Details go here" />
+            <Text id="_IDGenText3" text="Mandi Arrival Details go hereee" />
         </content>
     </Page>
 </mvc:View>
